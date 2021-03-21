@@ -7,9 +7,9 @@ import logging, math, time, subprocess, sys
 # - Requires sudo (to access raw sockets)
 # - I recommend using "tcpdump -i <interace> arp" to debug
 
-server_ip = "192.168.1.192" # Server sends commands
-client_ip = "192.168.1.232" # Client receives and executes commands
-broadcast_ip = "192.16.2.1" # IP spoofed by both client and server, used as an indicator for relevant packets
+server_ip = "192.168.1.xxx" # Server sends commands
+client_ip = "192.168.1.xxx" # Client receives and executes commands
+broadcast_ip = "192.16.2.x" # IP spoofed by both client and server, used as an indicator for relevant packets
 
 # Request the hardware address of the target_ip
 def arp_request(target_ip: str):
